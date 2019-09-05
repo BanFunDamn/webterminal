@@ -1,0 +1,23 @@
+﻿h1 {
+background-color: black;
+color: #00aaaa;
+text-align: center;
+}
+body {
+background: #000000;
+color: #ffffff;
+text-align: left;
+size: 100mm 140mm;
+}
+.directorybox input[type='text'] {
+outline: none;
+background-color: black;
+font-color: white;
+font-size: 24px;
+}
+.textbox input[type='text'] {
+outline: none;
+background-color: black;
+font-color: white;
+font-size: 18px;
+}
